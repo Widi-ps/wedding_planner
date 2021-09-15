@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Spectral:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Poiret+One&display=swap");
 
+
+
 :root {
   --font-1: "Cormorant Garamond", serif;
   --font-2: "Poiret One", sans-serif;
   --text-section: "Spectral", serif;
   --small-text: "DM Sans", sans-serif;
+}
+
+.divide{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.fs-45 {
+  font-size: 42px;
 }
 
 .navbar {
@@ -41,7 +54,7 @@
         width: 100%;
         height: 100%;
         background: linear-gradient(to left, #43c6ac, #191654);
-        opacity: 0.2;
+        opacity: 0.14;
       }
       .carousel-caption {
         position: absolute;
@@ -101,6 +114,41 @@
             }
           }
         }
+      }
+    }
+  }
+}
+
+.main {
+  margin-top: 7em;
+  margin-bottom: 7em;
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .content-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 90px;
+      .title {
+        font-family: var(--font-1);
+        margin-bottom: 1.3em;
+        font-weight: 500;
+      }
+      .caption {
+        color: hsl(240, 1%, 38%);
+        font-family: var(--text-section);
+        font-size: 16px;
+        margin-bottom: 30px;
+      }
+    }
+    .content-2 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
       }
     }
   }
