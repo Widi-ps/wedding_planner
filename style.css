@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Spectral:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap");
 :root {
   --font-1: "Cormorant Garamond", serif;
   --font-2: "Poiret One", sans-serif;
   --text-section: "Spectral", serif;
   --small-text: "DM Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --oswald: "Oswald", sans-serif;
 }
 
 .divide {
@@ -23,6 +26,30 @@
 
 .fs-45 {
   font-size: 42px;
+}
+
+.bg-grey-dark {
+  background-color: #ded5d8;
+}
+
+.bg-grey {
+  background-color: #f0edee;
+}
+
+.bg-grey-light {
+  background-color: #f9f6f5;
+}
+
+.lh-39 {
+  line-height: 36px;
+}
+
+.pd-4 {
+  padding-top: 40px;
+}
+
+.pd-60 {
+  padding-top: 60px;
 }
 
 .navbar .container .navbar-brand {
@@ -136,12 +163,12 @@
   letter-spacing: 1px;
 }
 
-.main {
+.about {
   margin-top: 7em;
   margin-bottom: 7em;
 }
 
-.main .main-content {
+.about .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +180,7 @@
           flex-direction: row;
 }
 
-.main .main-content .content-1 {
+.about .about-content .about-content-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,28 +194,93 @@
   padding: 30px 90px;
 }
 
-.main .main-content .content-1 .title {
+.about .about-content .about-content-1 .title {
   font-family: var(--font-1);
   margin-bottom: 1.3em;
   font-weight: 500;
 }
 
-.main .main-content .content-1 .caption {
+.about .about-content .about-content-1 .caption {
   color: #606062;
   font-family: var(--text-section);
   font-size: 16px;
   margin-bottom: 30px;
 }
 
-.main .main-content .content-2 {
+.about .about-content .about-content-2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
 }
 
-.main .main-content .content-2 img {
+.about .about-content .about-content-2 img {
   width: 100%;
   height: 100%;
+}
+
+.packages {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.packages .container .title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+
+.packages .container .title h1 {
+  font-family: var(--font-2);
+}
+
+.packages .container .row .packages-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33%;
+          flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.packages .container .row .packages-container .packages-content {
+  border-radius: 2px;
+  position: relative;
+  padding: 40px 30px 120px 30px;
+  font-family: var(--roboto);
+}
+
+.packages .container .row .packages-container .packages-content h2 {
+  font-family: var(--oswald);
+  text-transform: uppercase;
+  font-size: 26px;
+  font-weight: 900;
+  margin-bottom: 2em;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.packages .container .row .packages-container .packages-content p {
+  color: #727272;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.packages .container .row .packages-price {
+  position: relative;
+  background: #fff;
+  padding: 30px 30px 20px 30px;
+  letter-spacing: 4px;
+}
+
+.packages .container .row .packages-price .col h2 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.packages .container .row .packages-price .col p {
+  font-size: 40px;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
