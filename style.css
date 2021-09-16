@@ -220,8 +220,8 @@
 }
 
 .packages {
-  padding-top: 3em;
-  padding-bottom: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .packages .container .title {
@@ -246,6 +246,7 @@
   position: relative;
   padding: 40px 30px 120px 30px;
   font-family: var(--roboto);
+  margin-bottom: 10px;
 }
 
 .packages .container .row .packages-container .packages-content h2 {
@@ -268,9 +269,14 @@
 
 .packages .container .row .packages-price {
   position: relative;
-  background: #fff;
-  padding: 30px 30px 20px 30px;
   letter-spacing: 4px;
+  padding: 30px 30px 20px 30px;
+}
+
+.packages .container .row .packages-price .col {
+  background: #fff;
+  margin-top: -140px;
+  padding-top: 30px;
 }
 
 .packages .container .row .packages-price .col h2 {
@@ -282,5 +288,155 @@
 .packages .container .row .packages-price .col p {
   font-size: 40px;
   font-weight: 700;
+}
+
+.testi {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.testi .container .testimonial-title {
+  color: #333;
+  font-family: var(--font-2);
+  letter-spacing: 0.2rem;
+  padding: 3% 0;
+}
+
+.testi .container .testi-container {
+  padding: 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.testi .container .testi-container .testi-img {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  max-width: 40%;
+}
+
+.testi .container .testi-container .testi-img img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100%;
+  height: 100%;
+}
+
+.testi .container .testimonials {
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  max-width: 60%;
+  margin-left: -100px;
+}
+
+.testi .container .testimonials p {
+  margin: 0;
+  font-family: var(--roboto);
+  font-size: 18px;
+}
+
+.footer {
+  padding-top: .5em;
+}
+
+.footer .instagram-area {
+  position: relative;
+}
+
+.footer .instagram-area .follow-us {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.footer .instagram-area .follow-us p {
+  font-family: var(--oswald);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer .instagram-area .follow-us a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer .instagram-area .follow-us .mention {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  background-color: #fff;
+  padding: .6rem 4rem;
+  border-radius: 2px;
+}
+
+.footer .instagram-area .instagram-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .instagram-area .instagram-container .instagram-area-img {
+  height: 30vh;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 20px;
+}
+
+.footer .instagram-area .instagram-container .instagram-area-img img {
+  max-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+.footer .instagram-area .instagram-container .instagram-area-img:last-child {
+  padding: 0;
+}
+
+.footer .instagram-area .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .instagram-area .copyright .year, .footer .instagram-area .copyright .logo, .footer .instagram-area .copyright .top {
+  margin: 0;
+  font-size: 12px;
+  font-family: var(--text-section);
+  color: #333;
+}
+
+.footer .instagram-area .copyright .year, .footer .instagram-area .copyright .top {
+  text-transform: uppercase;
+}
+
+.footer .instagram-area .copyright a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
