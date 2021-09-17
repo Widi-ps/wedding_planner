@@ -1,0 +1,40 @@
+.book{
+  .carousel-inner{
+    .carousel-book{
+      position: relative;
+      .overlay-book{
+        background: linear-gradient(to right, #f0f2f0, #000c40);
+        opacity: .2;
+      }
+      .carousel-caption{
+        top: 30%;
+        right: 25%;
+        left: 25%;
+        .text-atas{
+          margin-top: 20px;
+          margin-bottom: 15px;
+          h1{
+            margin: 0;
+          }
+        }
+      }
+      .line{
+        display: block;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 20%;
+        height: 1px;
+        background: #fcf3f3;
+      }
+      .caption-book{
+        margin-top: 20px;
+        padding: 50px;
+      }
+      p{
+        color: #0a0608;
+      }
+    }
+  }
+}

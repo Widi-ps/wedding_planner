@@ -52,6 +52,28 @@
   padding-top: 60px;
 }
 
+.ff-82 {
+  font-size: 82px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.highlight {
+  font-family: var(--font-1);
+  font-weight: 300;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 15px;
+  background: white;
+}
+
 .navbar .container .navbar-brand {
   font-size: 25px;
 }
@@ -79,13 +101,10 @@
   left: 0%;
 }
 
-.carousel .carousel-inner .carousel-item .overlay {
+.carousel .carousel-inner .carousel-item .overlay-home {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, right top, left top, from(#43c6ac), to(#191654));
-  background: linear-gradient(to left, #43c6ac, #191654);
-  opacity: 0.14;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
@@ -99,6 +118,10 @@
   text-align: center;
 }
 
+.carousel .carousel-inner .carousel-item .carousel-caption .text-atas {
+  text-align: center;
+}
+
 .carousel .carousel-inner .carousel-item .carousel-caption .text-atas .upfont {
   margin: 5px;
   font-size: 12px;
@@ -106,12 +129,6 @@
   letter-spacing: 2px;
   font-weight: 800;
   text-shadow: 1px 2px rgba(178, 178, 178, 0.5);
-}
-
-.carousel .carousel-inner .carousel-item .carousel-caption .text-atas .highlight {
-  font-size: 82px;
-  font-family: var(--font-1);
-  font-weight: 300;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah {
@@ -141,12 +158,6 @@
   font-size: 14px;
   margin: 0;
   letter-spacing: 1px;
-}
-
-.carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .line {
-  width: 1px;
-  height: 15px;
-  background: white;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kanan {
@@ -349,7 +360,7 @@
 }
 
 .footer {
-  padding-top: .5em;
+  padding-top: 0.5em;
 }
 
 .footer .instagram-area {
@@ -381,7 +392,7 @@
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
   background-color: #fff;
-  padding: .6rem 4rem;
+  padding: 0.6rem 4rem;
   border-radius: 2px;
 }
 
@@ -425,14 +436,17 @@
           align-items: center;
 }
 
-.footer .instagram-area .copyright .year, .footer .instagram-area .copyright .logo, .footer .instagram-area .copyright .top {
+.footer .instagram-area .copyright .year,
+.footer .instagram-area .copyright .logo,
+.footer .instagram-area .copyright .top {
   margin: 0;
   font-size: 12px;
   font-family: var(--text-section);
   color: #333;
 }
 
-.footer .instagram-area .copyright .year, .footer .instagram-area .copyright .top {
+.footer .instagram-area .copyright .year,
+.footer .instagram-area .copyright .top {
   text-transform: uppercase;
 }
 
