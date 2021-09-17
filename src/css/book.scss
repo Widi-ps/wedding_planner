@@ -1,3 +1,12 @@
+:root {
+  --font-1: "Cormorant Garamond", serif;
+  --font-2: "Poiret One", sans-serif;
+  --text-section: "Spectral", serif;
+  --small-text: "DM Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --oswald: "Oswald", sans-serif;
+}
+
 .book{
   .carousel-inner{
     .carousel-book{
@@ -8,12 +17,13 @@
       }
       .carousel-caption{
         top: 30%;
-        right: 25%;
-        left: 25%;
+        right: 20%;
+        left: 20%;
         .text-atas{
           margin-top: 20px;
           margin-bottom: 15px;
           h1{
+            font-family: var(--text-section);
             margin: 0;
           }
         }
@@ -29,6 +39,7 @@
         background: #fcf3f3;
       }
       .caption-book{
+        width: 100%;
         margin-top: 20px;
         padding: 50px;
       }
@@ -36,5 +47,26 @@
         color: #0a0608;
       }
     }
+  }
+}
+
+.form-booking{
+  padding: 5em 8em 0 8em;
+  .row{
+    margin-bottom: 5px;
+    text-align: center;
+    p{
+      font-family: var(--text-section);
+      margin: 0;
+      a{
+        text-decoration: none;
+        color: #0a0608;
+      }
+    }
+  }
+  .form-container{
+    margin-top: 8%;
+    margin-bottom: 8%;
+
   }
 }

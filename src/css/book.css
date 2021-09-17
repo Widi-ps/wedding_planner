@@ -1,3 +1,12 @@
+:root {
+  --font-1: "Cormorant Garamond", serif;
+  --font-2: "Poiret One", sans-serif;
+  --text-section: "Spectral", serif;
+  --small-text: "DM Sans", sans-serif;
+  --roboto: "Roboto", sans-serif;
+  --oswald: "Oswald", sans-serif;
+}
+
 .book .carousel-inner .carousel-book {
   position: relative;
 }
@@ -10,8 +19,8 @@
 
 .book .carousel-inner .carousel-book .carousel-caption {
   top: 30%;
-  right: 25%;
-  left: 25%;
+  right: 20%;
+  left: 20%;
 }
 
 .book .carousel-inner .carousel-book .carousel-caption .text-atas {
@@ -20,6 +29,7 @@
 }
 
 .book .carousel-inner .carousel-book .carousel-caption .text-atas h1 {
+  font-family: var(--text-section);
   margin: 0;
 }
 
@@ -36,11 +46,36 @@
 }
 
 .book .carousel-inner .carousel-book .caption-book {
+  width: 100%;
   margin-top: 20px;
   padding: 50px;
 }
 
 .book .carousel-inner .carousel-book p {
   color: #0a0608;
+}
+
+.form-booking {
+  padding: 5em 8em 0 8em;
+}
+
+.form-booking .row {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.form-booking .row p {
+  font-family: var(--text-section);
+  margin: 0;
+}
+
+.form-booking .row p a {
+  text-decoration: none;
+  color: #0a0608;
+}
+
+.form-booking .form-container {
+  margin-top: 8%;
+  margin-bottom: 8%;
 }
 /*# sourceMappingURL=book.css.map */
