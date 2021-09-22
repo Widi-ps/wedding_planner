@@ -206,51 +206,50 @@
         font-family: var(--font-2);
       }
     }
-    .row {
-      .packages-container {
-        flex: 0 0 33.33%;
-        max-width: 33.33%;
-        .packages-content {
-          border-radius: 2px;
-          position: relative;
-          padding: 40px 30px 120px 30px;
-          font-family: var(--roboto);
-          margin-bottom: 10px;
-          h2 {
-            font-family: var(--oswald);
-            text-transform: uppercase;
-            font-size: 26px;
-            font-weight: 900;
-            margin-bottom: 2em;
-            letter-spacing: 2px;
-            color: #000;
-          }
-          p {
-            color: #727272;
-            font-weight: 600;
-            letter-spacing: 1px;
-            font-size: 15px;
-            padding-bottom: 15px;
-          }
+
+    .packages-container {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      .packages-content {
+        border-radius: 2px;
+        position: relative;
+        padding: 40px 30px 120px 30px;
+        font-family: var(--roboto);
+        margin-bottom: 10px;
+        h2 {
+          font-family: var(--oswald);
+          text-transform: uppercase;
+          font-size: 26px;
+          font-weight: 900;
+          margin-bottom: 2em;
+          letter-spacing: 2px;
+          color: #000;
+        }
+        p {
+          color: #727272;
+          font-weight: 600;
+          letter-spacing: 1px;
+          font-size: 15px;
+          padding-bottom: 15px;
         }
       }
-      .packages-price {
-        position: relative;
-        letter-spacing: 4px;
-        padding: 30px 30px 20px 30px;
-        .col {
-          background: #fff;
-          margin-top: -140px;
-          padding-top: 30px;
-          h2 {
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: 500;
-          }
-          p {
-            font-size: 40px;
-            font-weight: 700;
-          }
+    }
+    .packages-price {
+      position: relative;
+      letter-spacing: 4px;
+      padding: 30px 30px 20px 30px;
+      .col {
+        background: #fff;
+        margin-top: -140px;
+        padding-top: 30px;
+        h2 {
+          text-transform: uppercase;
+          font-size: 15px;
+          font-weight: 500;
+        }
+        p {
+          font-size: 40px;
+          font-weight: 700;
         }
       }
     }
@@ -439,7 +438,8 @@
   margin: 0;
   .about-content {
     flex-direction: column-reverse;
-    .about-content-1, .about-content-2{
+    .about-content-1,
+    .about-content-2 {
       flex: 0;
       max-width: 100%;
     }
@@ -453,4 +453,11 @@
   }
 }
 
-
+.packages {
+  #packages-wrap {
+    .packages-container {
+      flex: 0;
+      max-width: 100%;
+    }
+  }
+}

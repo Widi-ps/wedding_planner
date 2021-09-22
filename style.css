@@ -249,14 +249,14 @@
   font-family: var(--font-2);
 }
 
-.packages .container .row .packages-container {
+.packages .container .packages-container {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 33.33%;
           flex: 0 0 33.33%;
   max-width: 33.33%;
 }
 
-.packages .container .row .packages-container .packages-content {
+.packages .container .packages-container .packages-content {
   border-radius: 2px;
   position: relative;
   padding: 40px 30px 120px 30px;
@@ -264,7 +264,7 @@
   margin-bottom: 10px;
 }
 
-.packages .container .row .packages-container .packages-content h2 {
+.packages .container .packages-container .packages-content h2 {
   font-family: var(--oswald);
   text-transform: uppercase;
   font-size: 26px;
@@ -274,7 +274,7 @@
   color: #000;
 }
 
-.packages .container .row .packages-container .packages-content p {
+.packages .container .packages-container .packages-content p {
   color: #727272;
   font-weight: 600;
   letter-spacing: 1px;
@@ -282,25 +282,25 @@
   padding-bottom: 15px;
 }
 
-.packages .container .row .packages-price {
+.packages .container .packages-price {
   position: relative;
   letter-spacing: 4px;
   padding: 30px 30px 20px 30px;
 }
 
-.packages .container .row .packages-price .col {
+.packages .container .packages-price .col {
   background: #fff;
   margin-top: -140px;
   padding-top: 30px;
 }
 
-.packages .container .row .packages-price .col h2 {
+.packages .container .packages-price .col h2 {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 500;
 }
 
-.packages .container .row .packages-price .col p {
+.packages .container .packages-price .col p {
   font-size: 40px;
   font-weight: 700;
 }
@@ -542,7 +542,8 @@
           flex-direction: column-reverse;
 }
 
-.about .about-content .about-content-1, .about .about-content .about-content-2 {
+.about .about-content .about-content-1,
+.about .about-content .about-content-2 {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
@@ -556,5 +557,12 @@
 .about .about-content .about-content-1 .title {
   font-size: 24px;
   text-align: center;
+}
+
+.packages #packages-wrap .packages-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
