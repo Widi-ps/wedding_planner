@@ -46,7 +46,7 @@
   padding-top: 60px;
 }
 
-.ff-82{
+.ff-82 {
   font-size: 82px;
 }
 
@@ -126,27 +126,29 @@
           position: absolute;
           flex-wrap: wrap;
           justify-content: center;
-          align-items: center;
-          bottom: 5px;
+          top: 85%;
+          bottom: 15%;
           left: 0;
           .t-kiri {
             flex: 0 0 22.22%;
-            max-width: 0 0 22.22%;
+            max-width: 22.22%;
             p {
+              text-transform: uppercase;
               font-family: var(--font-1);
-              font-size: 14px;
+              font-size: 10px;
               margin: 0;
-              letter-spacing: 1px;
+              letter-spacing: 3px;
             }
           }
           .t-kanan {
             flex: 0 0 22.22%;
-            max-width: 0 0 22.22%;
+            max-width: 22.22%;
             p {
+              text-transform: uppercase;
               font-family: var(--font-1);
-              font-size: 14px;
+              font-size: 10px;
               margin: 0;
-              letter-spacing: 1px;
+              letter-spacing: 3px;
             }
           }
         }
@@ -163,6 +165,8 @@
     flex-wrap: wrap;
     flex-direction: row;
     .about-content-1 {
+      flex: 0 0 50%;
+      max-width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -366,3 +370,87 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    background: transparent;
+  }
+  .carousel {
+    .carousel-inner {
+      .carousel-item {
+        img {
+          top: 0;
+          left: 0;
+          height: 100%;
+          object-fit: cover;
+        }
+        .overlay {
+          top: 0;
+          left: 0;
+          height: 100%;
+          object-fit: cover;
+        }
+        .carousel-caption {
+          width: 100%;
+          height: 68%;
+          top: 33%;
+          left: 0;
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+          .caption {
+            height: 67%;
+          }
+          .text-atas {
+            display: flex;
+            flex-direction: column-reverse;
+            .upfont {
+              margin-top: 30px;
+              font-size: 15px;
+            }
+            .highlight {
+              font-size: 58px;
+              text-shadow: 2px 0px 7px rgb(182, 182, 182);
+              align-items: center;
+              justify-content: center;
+              margin: 0 auto 8px;
+            }
+          }
+          .text-bawah {
+            position: absolute;
+            width: 100%;
+            top: 77%;
+            bottom: 0%;
+            flex-direction: column;
+            .t-kanan,
+            .t-kiri {
+              max-width: 100%;
+              p {
+                margin-bottom: 0.5em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  margin: 0;
+  .about-content {
+    flex-direction: column-reverse;
+    .about-content-1, .about-content-2{
+      flex: 0;
+      max-width: 100%;
+    }
+    .about-content-1 {
+      padding: 3em 3em;
+      .title {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+

@@ -139,10 +139,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: 5px;
+  top: 85%;
+  bottom: 15%;
   left: 0;
 }
 
@@ -150,28 +148,30 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 0 22.22%;
           flex: 0 0 22.22%;
-  max-width: 0 0 22.22%;
+  max-width: 22.22%;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kiri p {
+  text-transform: uppercase;
   font-family: var(--font-1);
-  font-size: 14px;
+  font-size: 10px;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kanan {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 22.22%;
           flex: 0 0 22.22%;
-  max-width: 0 0 22.22%;
+  max-width: 22.22%;
 }
 
 .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kanan p {
+  text-transform: uppercase;
   font-family: var(--font-1);
-  font-size: 14px;
+  font-size: 10px;
   margin: 0;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
 .about {
@@ -192,6 +192,10 @@
 }
 
 .about .about-content .about-content-1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,5 +456,105 @@
 
 .footer .instagram-area .copyright a {
   text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    background: transparent;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    top: 0;
+    left: 0;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carousel .carousel-inner .carousel-item .overlay {
+    top: 0;
+    left: 0;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    width: 100%;
+    height: 68%;
+    top: 33%;
+    left: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .caption {
+    height: 67%;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-atas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-atas .upfont {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-atas .highlight {
+    font-size: 58px;
+    text-shadow: 2px 0px 7px #b6b6b6;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto 8px;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah {
+    position: absolute;
+    width: 100%;
+    top: 77%;
+    bottom: 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kanan,
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kiri {
+    max-width: 100%;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kanan p,
+  .carousel .carousel-inner .carousel-item .carousel-caption .text-bawah .t-kiri p {
+    margin-bottom: 0.5em;
+  }
+}
+
+.about {
+  margin: 0;
+}
+
+.about .about-content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.about .about-content .about-content-1, .about .about-content .about-content-2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  max-width: 100%;
+}
+
+.about .about-content .about-content-1 {
+  padding: 3em 3em;
+}
+
+.about .about-content .about-content-1 .title {
+  font-size: 24px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
