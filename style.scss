@@ -163,12 +163,11 @@
   .about-content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     .about-content-1 {
+      display: flex;
       flex: 0 0 50%;
       max-width: 50%;
-      display: flex;
-      flex-direction: column;
+      // flex-direction: column;
       justify-content: center;
       padding: 30px 90px;
       .title {
@@ -370,6 +369,7 @@
   }
 }
 
+
 @media (max-width: 576px) {
   .navbar {
     background: transparent;
@@ -404,11 +404,12 @@
             flex-direction: column-reverse;
             .upfont {
               margin-top: 30px;
-              font-size: 15px;
+              font-size: 16px;
+              text-shadow: 2px 0px 3px rgb(90, 90, 90);
             }
             .highlight {
-              font-size: 58px;
-              text-shadow: 2px 0px 7px rgb(182, 182, 182);
+              font-size: 80px;
+              text-shadow: 2px 0px 7px rgb(145, 145, 145);
               align-items: center;
               justify-content: center;
               margin: 0 auto 8px;
@@ -424,6 +425,7 @@
             .t-kiri {
               max-width: 100%;
               p {
+                font-size: 10px;
                 margin-bottom: 0.5em;
               }
             }
@@ -432,32 +434,55 @@
       }
     }
   }
-}
-
-.about {
-  margin: 0;
-  .about-content {
-    flex-direction: column-reverse;
-    .about-content-1,
-    .about-content-2 {
-      flex: 0;
-      max-width: 100%;
-    }
-    .about-content-1 {
-      padding: 3em 3em;
-      .title {
-        font-size: 24px;
-        text-align: center;
+  .about {
+    margin: 0;
+    .about-content {
+      flex-direction: column-reverse;
+      .about-content-1,
+      .about-content-2 {
+        flex: 0;
+        max-width: 100%;
+      }
+      .about-content-1 {
+        padding: 3em 3em;
+        .title {
+          font-size: 24px;
+          text-align: center;
+        }
       }
     }
   }
-}
+  
+  .packages{
+    #packages-wrap{
+      .packages-container{
+        flex: 0;
+        max-width: 100%;
+      }
+    }
+  }
 
-.packages {
-  #packages-wrap {
-    .packages-container {
-      flex: 0;
-      max-width: 100%;
+  .testi{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    .container{
+      .testimonial-title{
+        font-size: 42px;
+      }
+      .container-fluid{
+        .testi-container{
+          flex-direction: column;
+          .testi-img{
+            max-width: 100%;
+          }
+        }
+        .testimonials{
+          max-width: 85%;
+          margin-top: -100px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
     }
   }
 }
