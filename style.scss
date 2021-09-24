@@ -288,6 +288,8 @@
       flex: 0 0 60%;
       max-width: 60%;
       margin-left: -100px;
+      margin-bottom: 20px;
+      margin-top: 20px;
       p {
         color: #727272;
         margin: 0;
@@ -299,15 +301,15 @@
 }
 
 .footer {
-  padding-top: 0.5em;
+  padding-top: 3em;
   .instagram-area {
     position: relative;
     .follow-us {
       margin-bottom: 2em;
       text-align: center;
       p {
-        font-family: var(--oswald);
-        font-weight: 500;
+        font-family: var(--font-2);
+        font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-size: 12px;
@@ -315,12 +317,12 @@
       a {
         text-decoration: none;
         color: #333;
-      }
-      .mention {
         position: absolute;
         top: 30%;
         left: 50%;
         transform: translate(-50%, 50%);
+      }
+      .mention {
         background-color: #fff;
         padding: 0.6rem 4rem;
         border-radius: 2px;
@@ -346,32 +348,32 @@
       }
     }
 
-    .copyright {
-      display: flex;
-      justify-content: space-around;
-      padding: 20px;
-      align-items: center;
-      .year,
-      .logo,
-      .top {
-        margin: 0;
-        font-size: 12px;
-        font-family: var(--text-section);
-        color: #333;
-      }
-      .year,
-      .top {
-        text-transform: uppercase;
-      }
-      a {
-        text-decoration: none;
-      }
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    .year,
+    .logo,
+    .top {
+      margin: 0;
+      font-size: 12px;
+      font-family: var(--small-text);
+      color: #333;
+    }
+    .year,
+    .top {
+      text-transform: uppercase;
+    }
+    a {
+      text-decoration: none;
     }
   }
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
     background: transparent;
   }
@@ -457,7 +459,7 @@
   .packages{
     #packages-wrap{
       .packages-container{
-        flex: 0;
+        flex: 0 0 100%;
         max-width: 100%;
       }
     }
@@ -480,11 +482,51 @@
         .testimonials{
           max-width: 85%;
           margin-top: -20%;
-          margin-left: auto;
-          margin-right: auto;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding: 20px;
           p{
-            font-size: 12px;
+            font-size: 15px;
           }
+        }
+      }
+    }
+  }
+
+  .footer{
+    .instagram-area{
+      .follow-us{
+        .follow-ig{
+          font-size: 1em;
+        }
+        a{
+          top: 40%;
+          left: 50%;
+          .mention{
+            padding: 0.6rem 2rem;
+          }
+        }
+      }
+      .instagram-container{
+        .instagram-area-img{
+          padding-right: 0;
+        }
+      }
+    }
+    .copyright{
+      flex-direction: column;
+      .year{
+        font-size: 11px;
+        letter-spacing: 2px;
+        margin-bottom: .5em;
+      }
+      .logo-img{
+        margin-bottom: .5em;
+      }
+      .scroll-up{
+        .top{
+          letter-spacing: 4px;
+          margin-bottom: .5em;
         }
       }
     }

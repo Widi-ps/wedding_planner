@@ -347,6 +347,8 @@
           flex: 0 0 60%;
   max-width: 60%;
   margin-left: -100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .testi .container .testimonials p {
@@ -357,7 +359,7 @@
 }
 
 .footer {
-  padding-top: 0.5em;
+  padding-top: 3em;
 }
 
 .footer .instagram-area {
@@ -370,8 +372,8 @@
 }
 
 .footer .instagram-area .follow-us p {
-  font-family: var(--oswald);
-  font-weight: 500;
+  font-family: var(--font-2);
+  font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 12px;
@@ -380,14 +382,14 @@
 .footer .instagram-area .follow-us a {
   text-decoration: none;
   color: #333;
-}
-
-.footer .instagram-area .follow-us .mention {
   position: absolute;
   top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, 50%);
           transform: translate(-50%, 50%);
+}
+
+.footer .instagram-area .follow-us .mention {
   background-color: #fff;
   padding: 0.6rem 4rem;
   border-radius: 2px;
@@ -421,7 +423,7 @@
   padding: 0;
 }
 
-.footer .instagram-area .copyright {
+.footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -433,25 +435,25 @@
           align-items: center;
 }
 
-.footer .instagram-area .copyright .year,
-.footer .instagram-area .copyright .logo,
-.footer .instagram-area .copyright .top {
+.footer .copyright .year,
+.footer .copyright .logo,
+.footer .copyright .top {
   margin: 0;
   font-size: 12px;
-  font-family: var(--text-section);
+  font-family: var(--small-text);
   color: #333;
 }
 
-.footer .instagram-area .copyright .year,
-.footer .instagram-area .copyright .top {
+.footer .copyright .year,
+.footer .copyright .top {
   text-transform: uppercase;
 }
 
-.footer .instagram-area .copyright a {
+.footer .copyright a {
   text-decoration: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .navbar {
     background: transparent;
   }
@@ -549,8 +551,8 @@
   }
   .packages #packages-wrap .packages-container {
     -webkit-box-flex: 0;
-        -ms-flex: 0;
-            flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
     max-width: 100%;
   }
   .testi {
@@ -572,11 +574,43 @@
   .testi .container .container-fluid .testimonials {
     max-width: 85%;
     margin-top: -20%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
   }
   .testi .container .container-fluid .testimonials p {
-    font-size: 12px;
+    font-size: 15px;
+  }
+  .footer .instagram-area .follow-us .follow-ig {
+    font-size: 1em;
+  }
+  .footer .instagram-area .follow-us a {
+    top: 40%;
+    left: 50%;
+  }
+  .footer .instagram-area .follow-us a .mention {
+    padding: 0.6rem 2rem;
+  }
+  .footer .instagram-area .instagram-container .instagram-area-img {
+    padding-right: 0;
+  }
+  .footer .copyright {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .copyright .year {
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: .5em;
+  }
+  .footer .copyright .logo-img {
+    margin-bottom: .5em;
+  }
+  .footer .copyright .scroll-up .top {
+    letter-spacing: 4px;
+    margin-bottom: .5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
