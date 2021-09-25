@@ -16,8 +16,8 @@
         opacity: 0.2;
       }
       .carousel-caption {
-        position: relative;
-        top: 30%;
+        position: absolute;
+        top: 25%;
         right: 20%;
         left: 20%;
         .text-atas {
@@ -82,7 +82,7 @@
           height: 100%;
           object-fit: cover;
         }
-        .overlay {
+        .overlay-book {
           top: 0;
           left: 0;
           height: 100%;
@@ -95,30 +95,33 @@
           left: 0;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
-          .caption {
-            height: 60%;
-            .text-atas {
-              display: flex;
-              flex-direction: column;
-              .highlight {
-                font-size: 32px;
-                text-shadow: 2px 0px 7px rgba(230, 230, 230, 0.63);
-                align-items: center;
-                justify-content: center;
-                margin: 0 auto 8px;
-                padding: 0 1.5em;
+          .container-fluid{
+            position: relative;
+            .caption {
+              height: 60%;
+              .text-atas {
+                display: flex;
+                flex-direction: column;
+                .highlight {
+                  font-size: 32px;
+                  text-shadow: 2px 0px 7px rgba(230, 230, 230, 0.63);
+                  align-items: center;
+                  justify-content: center;
+                  margin: 0 auto 8px;
+                  padding: 0 1.5em;
+                }
               }
             }
-          }
-          .line {
-            top: 60%;
-            height: 1.5px;
-          }
-          .caption-book{
-            padding-top: 0;
-          }
-          p{
-            color: #0A0926;
+            .line {
+              top: 60%;
+              height: 1.5px;
+            }
+            .caption-book{
+              padding-top: 0;
+            }
+            p{
+              color: #0A0926;
+            }
           }
         }
       }
