@@ -438,7 +438,6 @@
 .footer .copyright .year,
 .footer .copyright .logo,
 .footer .copyright .top {
-  margin: 0;
   font-size: 12px;
   font-family: var(--small-text);
   color: #333;
@@ -605,12 +604,12 @@
     letter-spacing: 2px;
     margin-bottom: .5em;
   }
-  .footer .copyright .logo-img {
-    margin-bottom: .5em;
+  .footer .copyright .scroll-up {
+    margin-bottom: 0;
   }
   .footer .copyright .scroll-up .top {
-    letter-spacing: 4px;
     margin-bottom: .5em;
+    letter-spacing: 4px;
   }
 }
 /*# sourceMappingURL=style.css.map */

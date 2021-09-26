@@ -54,6 +54,9 @@
 
 .form-booking {
   padding: 5em 8em 0 8em;
+  .text-el{
+    width: 75%;
+  }
   .row {
     margin-bottom: 5px;
     text-align: center;
@@ -113,14 +116,59 @@
               }
             }
             .line {
-              top: 60%;
+              top: 45%;
               height: 1.5px;
             }
             .caption-book{
-              padding-top: 0;
+              padding-top: 10%;
             }
             p{
               color: #0A0926;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form-booking{
+    padding: 0;
+    .email-info{
+      padding-top: 5em;
+      .text-el{
+        width: 75%;
+        .row{
+          p{
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 499px){
+  .carousel{
+    .carousel-inner{
+      .carousel-book{
+        .carousel-caption{
+          .container-fluid{
+            .line{
+              top: 55%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 380px){
+  .carousel{
+    .carousel-inner{
+      .carousel-book{
+        .carousel-caption{
+          .container-fluid{
+            .line{
+              top: 60%;
             }
           }
         }

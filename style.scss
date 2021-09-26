@@ -347,7 +347,6 @@
         padding: 0;
       }
     }
-
   }
   .copyright {
     display: flex;
@@ -357,7 +356,6 @@
     .year,
     .logo,
     .top {
-      margin: 0;
       font-size: 12px;
       font-family: var(--small-text);
       color: #333;
@@ -520,15 +518,15 @@
         letter-spacing: 2px;
         margin-bottom: .5em;
       }
-      .logo-img{
-        margin-bottom: .5em;
-      }
       .scroll-up{
+        margin-bottom: 0;
         .top{
-          letter-spacing: 4px;
           margin-bottom: .5em;
+          letter-spacing: 4px;
         }
       }
     }
   }
 }
+
+
